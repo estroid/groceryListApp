@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Get Groceries</title>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script><!-- Bootstrap -->
     <link rel="stylesheet" href="css/style.css"> <!-- Links to an alternate version of the document -->
 </head>
 <body>
 <h1>One Basket</h1>
 
-<form action="action_page.php" class="col-xs-6 col-xs-offset-3">
-    <input type="text" name="add item">
-    <button type="submit">+</button>
+<!-- User can add items -->
+
+<form id="userInput">
+    <input type="text" id="item" name="new_item">
+    <input type="submit" value="+">
+
 </form>
+
+<ul id="list">
+
+
+</ul>
 
 
 
 
 <!-- JS script -->
-<script type="text/javascript" src="js/custon.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
 </html>
