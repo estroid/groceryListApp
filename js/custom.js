@@ -8,7 +8,7 @@ $(document).ready(function(){
 
  // inserts value of newItem variable into html with the .append()
 
-    $('#list').append("<li class='item'><label><input type='checkbox' name='new-item'>" + newItem + "</label><br></li>"); // Appends (or adds after) html list item objects to the <ul> with the id of list
+    $('#list').append("<li class='item'><label><input type='checkbox' name='new-item'>" + newItem + "</label><br></li><button name='button' id='deleteButton' class='delete'>X</button>"); // Appends (or adds after) html list item objects to the <ul> with the id of list
     $("#item").val(""); // Since we prevented default behavior above, we need to reset the input field so that the input field stays clear after each submission
   });
 
@@ -20,7 +20,13 @@ $(document).ready(function(){
 
 // User can permanently delete items
 
+	$('#list').on('click', '#deleteButton', function() {
+		console.log('whattup');
+		});
 
+	//If the button is clicked, then user can select to delete it
+
+	// $(.deleteButton).remove();
 
 
 // Optional: users can move items to proper food category?
