@@ -13,11 +13,19 @@ h1 { /* One Basket title */
     color: #fff;
     font-size: 3.5em;
     text-shadow: 1px 1px 1px dimgrey;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+}
+
+
+.fa-plus-circle:before { /* Add button */
+    vertical-align: -11px;
+    margin-left: 8px;
+    color: white;
 }
 
 #userInput { /* Input and button */
     text-align: center;
+    margin-top: -15px;
 }
 
 #list { /* List of new items */
@@ -26,7 +34,14 @@ h1 { /* One Basket title */
     text-align: center;
     font-family: 'Questrial', sans-serif;
     font-weight: 500;
+    margin-top:
+}
 
+ul#list{
+      padding: 0px;
+      margin-left: 200px;
+      margin-right: 200px;
+      margin-top: 6px;
 }
 
 #list li { /* latch on to ul element and do this to all of its children li elements */
@@ -38,12 +53,12 @@ h1 { /* One Basket title */
 
 .completed { /*Refers to checked/line-through items */
     text-decoration: line-through;
-    color: rosybrown;
+    color: dimgrey;
 }
 
 .userText { /* Input box and new text */
     width: 150px;
-    height: 20px;
+    height: 28px;
     border: 2px solid;
     color: dimgrey;
     border-radius: 10px;
@@ -60,19 +75,16 @@ input { /* Submit button */
     font-size: 20px;
     color: white;
     font-family: 'Questrial', sans-serif;
-    vertical-align: -6px;
+    vertical-align: -5px;
 }
 
-#submitButton {
-    color: white;
-    font-family: Arial;
-    font-size: 20px;
-    font-family: 'Questrial', sans-serif;
+.delete:hover {
+    cursor: pointer; cursor: hand;
 }
 
-button.delete {
-    vertical-align: 3px;
-
+.delete {
+    vertical-align: 0px;
+    margin-left: 8px;
 }
 
 li.item {
@@ -80,4 +92,17 @@ li.item {
     padding 0px;
     margin-right: 0px;
 }
+
+input.checkbox {
+    margin-right: -4px;
+
+}
+
+.fa-plus-circle {
+    vertical-align: 1px;
+    padding: 0px;
+    margin-left: 6px;
+   /* text-shadow: 1px 1px 1px #2f4f4f;*/
+}
+
 

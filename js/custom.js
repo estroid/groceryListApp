@@ -8,9 +8,14 @@ $(document).ready(function(){
 
  // inserts value of newItem variable into html with the .append()
 
-    $('#list').append("<li class='item'><label><input type='checkbox' name='new-item' class='checkbox'>" + newItem + "</label> <button name='button' class='delete'>X</button></li>"); // Appends (or adds after) html list item objects to the <ul> with the id of list
+  //   $('#list').append("<li class='item'><label><input type='checkbox' name='new-item' class='checkbox'>" + newItem + "</label> <button name='button' class='delete'>X</button></li>"); // Appends (or adds after) html list item objects to the <ul> with the id of list
+  //   $("#item").val(""); // Since we prevented default behavior above, we need to reset the input field so that the input field stays clear after each submission
+  // });
+
+$('#list').append("<li class='item'><label><input type='checkbox' name='new-item' class='checkbox'>" + newItem + "</label><i class='fa fa-times delete'></i></li>"); // Appends (or adds after) html list item objects to the <ul> with the id of list
     $("#item").val(""); // Since we prevented default behavior above, we need to reset the input field so that the input field stays clear after each submission
   });
+
 
 // User can check/strikethrough and uncheck items
 	$('#list').on('click', '.checkbox', function(){ // .on(events[,selector],handler) method will listen for a click event on a particular list item and will run the function
