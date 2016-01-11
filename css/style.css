@@ -3,8 +3,9 @@ html { /* Full size background image */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover
+    background-size: cover;
 }
+
 
 h1 { /* One Basket title */
     font-family: 'Fredoka One', cursive;
@@ -19,14 +20,19 @@ h1 { /* One Basket title */
     text-align: center;
 }
 
-
 #list { /* List of new items */
     color: #fff;
     font-size: 22px;
     text-align: center;
     font-family: 'Questrial', sans-serif;
-    text-shadow: 1px 1px 1px dimgrey;
     font-weight: 500;
+
+}
+
+#list li { /* latch on to ul element and do this to all of its children li elements */
+    list-style-type: none;
+    text-align: left;
+    margin-left: 40%;
 
 }
 
@@ -54,6 +60,7 @@ input { /* Submit button */
     font-size: 20px;
     color: white;
     font-family: 'Questrial', sans-serif;
+    vertical-align: -6px;
 }
 
 #submitButton {
@@ -62,3 +69,15 @@ input { /* Submit button */
     font-size: 20px;
     font-family: 'Questrial', sans-serif;
 }
+
+button.delete {
+    vertical-align: 3px;
+
+}
+
+li.item {
+    height: 25px;
+    padding 0px;
+    margin-right: 0px;
+}
+
