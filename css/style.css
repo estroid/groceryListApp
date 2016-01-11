@@ -38,10 +38,10 @@ h1 { /* One Basket title */
 }
 
 ul#list{
-      padding: 0px;
-      margin-left: 200px;
-      margin-right: 200px;
-      margin-top: 6px;
+    padding: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 6px;
 }
 
 #list li { /* latch on to ul element and do this to all of its children li elements */
@@ -57,8 +57,8 @@ ul#list{
 }
 
 .userText { /* Input box and new text */
-    width: 150px;
-    height: 28px;
+    width: 160px;
+    height: 25px;
     border: 2px solid;
     color: dimgrey;
     border-radius: 10px;
@@ -102,7 +102,7 @@ input.checkbox {
     vertical-align: 1px;
     padding: 0px;
     margin-left: 6px;
-   /* text-shadow: 1px 1px 1px #2f4f4f;*/
+    text-shadow: 1px 1px 1px dimgrey;
 }
 
 
