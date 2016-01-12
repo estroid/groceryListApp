@@ -2,42 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Get Groceries</title>
+    <title>One Basket</title>
     <link rel="stylesheet" href="css/style.css"> <!-- Links to an alternate version of the document -->
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css"> <!--Font Awesome -->
     <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+
 </head>
-
 <body>
+<h1>One Basket</h1>
 
-<h1 class="text-center">One Basket</h1>
+<!-- User can add items -->
 
-<!-- Form for user to add items -->
+<form id="userInput">
+    <input type="text" id="item" name="new_item" class="userText">
+   <!--  <input type="submit" value="+" id="submitButton"> -->
+    <a href="#" id="submitButton"><i class="fa fa-plus-circle fa-2x"></i></a>
 
-<form class="col-xs-6 col-xs-offset-3">
-    <!-- <label for="newItemInput">New item</label> -->
-    <input name="newItem" id="newItemInput" type="text">
-    <button type="submit">+</button>
 </form>
 
-<ul id="listOfItems" class="col-xs-6 col-xs-offset-3 list-unstyled">
-    <li>New Item <span>X</span></li>
-    <li class="completed">Completed Item <span>X</span></li>
-    <li class="checkedOff"><input class="done" type="checkbox" checked /> Item 2 <span class="delete">x</span></li>
+<ul id="list">
+
 </ul>
 
-<!-- User can check and uncheck items -->
-
-
-
-<!-- User can permanently delete items -->
-
-
-
 <!-- JS script -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
 </html>
